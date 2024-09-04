@@ -1,2 +1,2 @@
-# c-rus-2022-autumn
+# programming-c-2024-autumn
 Programming in C
