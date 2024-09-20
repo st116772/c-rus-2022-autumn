@@ -6,8 +6,7 @@ int main(int argc, char* argv[])
 
 	scanf_s("%d", &a);
 
-	int b = a + 1;
-	printf("%d", b);
+	printf("%d", a + 1);
 
 	return EXIT_SUCCESS;
 }

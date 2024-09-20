@@ -8,8 +8,7 @@ int main(int argc, char* argv[])
 	scanf_s("%d", &a);
 	scanf_s("%d", &b);
 
-	int c = a + b;
-	printf("%d", c);
+	printf("%d", a + b);
 
 	return EXIT_SUCCESS;
 }

@@ -10,8 +10,7 @@ int main(int argc, char* argv[])
 	scanf_s("%d", &b);
 	scanf_s("%d", &c);
 
-	int d = a * b * c * 2;
-	printf("%d", d);
+	printf("%d", a * b * c * 2);
 
 	return EXIT_SUCCESS;
 }
