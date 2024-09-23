@@ -10,8 +10,13 @@ int main(int argc, char* argv[])
 	scanf_s("%d", &a);
 	scanf_s("%d", &b);
 
-	int d = a - b;
-	printf("%d", (h - b - 1) / d + 1);
+	int c = a - b;
+	int d = (c - h % c) % c;
+	h += d;
+	int e = (h - a) * (h / a - (h - a) / a);
+	d = (c - e % c) % c;
+	e += d;
+	printf("%d", 1 + e / c);
 
 	return EXIT_SUCCESS;
 }
