@@ -2,25 +2,19 @@
 
 int main(int argc, char* argv[])
 {
-	int a1 = 0;
-	int b1 = 0;
-	int a2 = 0;
-	int b2 = 0;
+	int a = 0;
+	int b = 0;
 
-	scanf_s("%d", &a1);
-	scanf_s("%d", &b1);
-	scanf_s("%d", &a2);
-	scanf_s("%d", &b2);
+	scanf_s("%d", &a);
+	scanf_s("%d", &b);
 
-	int a = a1 - a2;
-	int b = b1 - b2;
-	if (a == 0 || b == 0 || a * a == b * b)
+	if (a == b)
 	{
-		printf("YES");
+		printf("%d", a == 1 ? 0 : 2);
 	}
 	else
 	{
-		printf("NO");
+		printf("1");
 	}
 
 	return 0;
