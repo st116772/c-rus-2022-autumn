@@ -2,26 +2,25 @@
 
 int main(int argc, char* argv[])
 {
-	long long k = 0;
-	long long m = 0;
-	long long n = 0;
+	int a = 0;
+	int b = 0;
 
-	scanf_s("%lld", &k);
-	scanf_s("%lld", &m);
-	scanf_s("%lld", &n);
+	scanf_s("%d", &a);
+	scanf_s("%d", &b);
 
-
-	if (n % k == 0)
+	int p = (a + 1) * b + (b + 1) * a;
+	int s = a + b;
+	if (a == 1 || b == 1)
 	{
-		printf("%d", (n / k) * 2 * m);
+		printf("%d", a * b * 4);
 	}
-	else if ((n % k) <= (k / 2) && (n / k) > 0)
+	else if (a % 2 == 0 || b % 2 == 0)
 	{
-		printf("%d", (n / k + 1) * 2 * m - m);
+		printf("%d", p + s);
 	}
-	else
+	else 
 	{
-		printf("%d", (n / k + 1) * 2 * m);
+		printf("%d", p + s - 2);
 	}
 
 	return 0;
